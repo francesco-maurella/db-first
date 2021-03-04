@@ -3,6 +3,7 @@
 [   Modello             |           |   VARCHAR(50)    |                |   NOTNULL   ]
 [   Immatricolazione    |           |   DATE           |                |   NOTNULL   ]
 [   Nuovo/Usato         |           |   TINYINT (1)    |   DEFAULT(0)   |   NOTNULL   ]
+[   KM percorsi         |           |   TINYINT (1)    |   DEFAULT(0)   |   NOTNULL   ]
 [   Targa               |   UNIQUE  |   VARCHAR (6)    |                |   NOTNULL   ]
 [   Tipologìa           |           |   VARCHAR(20)    |                |   NULL      ]
 [   Cilindrata          |           |   TINYINT (5)    |                |   NOTNULL   ]
