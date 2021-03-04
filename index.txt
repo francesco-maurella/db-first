@@ -1,0 +1,13 @@
+ID                  |    PK     |       BIGINT       |    AUTO-INCR   |   NOTNULL
+Marca               |           |     VARCHAR(50)    |                |   NOTNULL
+Modello             |           |     VARCHAR(50)    |                |   NOTNULL
+Targa               |   UNIQUE  |     VARCHAR (6)    |                |   NOTNULL
+Immatricolazione    |           |       DATE         |                |   NULL
+Tipologìa           |           |     VARCHAR(20)    |                |   NULL
+Cilindrata          |           |     TINYINT (5)    |                |   NOTNULL
+Potenza (KW)        |           |     TINYINT (4)    |                |   NULL
+Alimentazione       |           |     VARCHAR(50)    |                |   NULL
+Cambio              |           |     VARCHAR(10)    |                |   NULL
+Colore              |           |     VARCHAR(15)    |                |   NULL
+Porte (num)         |           |     TINYINT (1)    |   DEFAULT(0)   |   NULL   
+Prezzo              |           |    DECIMAL(6,2)    |   DEFAULT(0)   |   NOTNULL
