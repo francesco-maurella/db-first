@@ -1,13 +1,22 @@
-ID                  |    PK     |       BIGINT       |    AUTO-INCR   |   NOTNULL
-Marca               |           |     VARCHAR(50)    |                |   NOTNULL
-Modello             |           |     VARCHAR(50)    |                |   NOTNULL
-Targa               |   UNIQUE  |     VARCHAR (6)    |                |   NOTNULL
-Immatricolazione    |           |       DATE         |                |   NULL
-Tipologìa           |           |     VARCHAR(20)    |                |   NULL
-Cilindrata          |           |     TINYINT (5)    |                |   NOTNULL
-Potenza (KW)        |           |     TINYINT (4)    |                |   NULL
-Alimentazione       |           |     VARCHAR(50)    |                |   NULL
-Cambio              |           |     VARCHAR(10)    |                |   NULL
-Colore              |           |     VARCHAR(15)    |                |   NULL
-Porte (num)         |           |     TINYINT (1)    |   DEFAULT(0)   |   NULL   
-Prezzo              |           |    DECIMAL(6,2)    |   DEFAULT(0)   |   NOTNULL
+[   ID                  |   PK      |   BIGINT         |   AUTO-INCR    |             ]
+[   Marca               |           |   VARCHAR(50)    |                |   NOTNULL   ]
+[   Modello             |           |   VARCHAR(50)    |                |   NOTNULL   ]
+[   Immatricolazione    |           |   DATE           |                |   NOTNULL   ]
+[   Nuovo/Usato         |           |   TINYINT (1)    |   DEFAULT(0)   |   NOTNULL   ]
+[   Targa               |   UNIQUE  |   VARCHAR (6)    |                |   NOTNULL   ]
+[   Tipologìa           |           |   VARCHAR(20)    |                |   NULL      ]
+[   Cilindrata          |           |   TINYINT (5)    |                |   NOTNULL   ]
+[   Potenza (KW)        |           |   TINYINT (4)    |                |   NOTNULL   ]
+[   Alimentazione       |           |   VARCHAR(50)    |                |   NOTNULL   ]
+[   Cambio              |           |   VARCHAR(10)    |                |   NULL      ]
+[   Marce               |           |   TINYINT (1)    |   DEFAULT(2)   |   NULL      ]
+[   Colore              |           |   VARCHAR(15)    |                |   NULL      ]
+[   Porte (num)         |           |   TINYINT (1)    |   DEFAULT(0)   |   NULL      ]
+[   Posti (num)         |           |   TINYINT (2)    |   DEFAULT(1)   |   NULL      ]
+[   Bagagliaio          |           |   TINYINT (1)    |                |   NULL      ]
+[   Lunghezza (cm)      |           |   TINYINT (3)    |   DEFAULT(1)   |   NULL      ]
+[   Larghezza (cm)      |           |   TINYINT (3)    |   DEFAULT(1)   |   NULL      ]
+[   Altezza   (cm)      |           |   TINYINT (3)    |   DEFAULT(1)   |   NULL      ]
+[   Serbatoio (lt)      |           |   TINYINT (3)    |                |   NULL      ]
+[   Prezzo              |           |   DECIMAL(6,2)   |   DEFAULT(0)   |   NOTNULL   ]
+[   Note                |           |   TEXT           |                |   NULL      ]
