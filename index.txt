@@ -1,35 +1,36 @@
 database  = autovetture
 tabella   = auto
 
-[   Nome Colonna        |   Primary Key   |   Tipo Dato     |   Attributi                  ]
- ____________________________________________________________________________________
-[   ID                  |   PK            |   BIGINT        |   AUTO-INCR    |             ]
-[   Marca               |                 |   VARCHAR(50)   |                |   NOTNULL   ]
-[   Modello             |                 |   VARCHAR(50)   |                |   NOTNULL   ]
-[   Immatricolazione    |                 |   DATE          |                |   NOTNULL   ]
-[   Usato               |                 |   TINYINT (1)   |   DEFAULT(0)   |   NOTNULL   ]
-[   KM percorsi         |                 |   TINYINT (1)   |   DEFAULT(0)   |   NOTNULL   ]
-[   Targa               |                 |   VARCHAR (6)   |   UNIQUE       |   NOTNULL   ]
-[   Tipologìa           |                 |   VARCHAR(20)   |                |   NULL      ]
-[   Cilindrata (cc)     |                 |   TINYINT (5)   |                |   NOTNULL   ]
-[   Potenza (KW)        |                 |   TINYINT (4)   |                |   NOTNULL   ]
-[   Alimentazione       |                 |   VARCHAR(50)   |                |   NOTNULL   ]
-[   Cambio              |                 |   VARCHAR(10)   |                |   NULL      ]
-[   Marce               |                 |   TINYINT (1)   |   DEFAULT(2)   |   NULL      ]
-[   Colore              |                 |   VARCHAR(15)   |                |   NULL      ]
-[   Porte (num)         |                 |   TINYINT (1)   |   DEFAULT(0)   |   NULL      ]
-[   Posti (num)         |                 |   TINYINT (2)   |   DEFAULT(1)   |   NULL      ]
-[   Lunghezza (cm)      |                 |   TINYINT (3)   |   DEFAULT(1)   |   NULL      ]
-[   Larghezza (cm)      |                 |   TINYINT (3)   |   DEFAULT(1)   |   NULL      ]
-[   Altezza   (cm)      |                 |   TINYINT (3)   |   DEFAULT(1)   |   NULL      ]
-[   Serbatoio (lt)      |                 |   TINYINT (3)   |                |   NULL      ]
-[   Optionals           |                 |   TEXT          |                |   NULL      ]
-[   Note                |                 |   TEXT          |                |   NULL      ]
-[   Prezzo              |                 |   DECIMAL(6,2)  |   DEFAULT(0)   |   NOTNULL   ]
+[   Nome Colonna        |   Primary Key   |   Tipo Dato     |   Attributi    |   Attributi    ]
+ _____________________________________________________________________________________________
+[   ID                  |   PK            |   BIGINT        |   AUTO-INCR    |                ]
+[   Marca               |                 |   VARCHAR(50)   |                |   NOTNULL      ]
+[   Modello             |                 |   VARCHAR(50)   |                |   NOTNULL      ]
+[   Immatricolazione    |                 |   DATE          |                |   NOTNULL      ]
+[   Usato               |                 |   TINYINT (1)   |   DEFAULT(0)   |   NOTNULL      ]
+[   KM percorsi         |                 |   TINYINT (7)   |   DEFAULT(0)   |   NOTNULL      ]
+[   Targa               |                 |   VARCHAR (6)   |   UNIQUE       |   NOTNULL      ]
+[   Tipologìa           |                 |   VARCHAR(20)   |                |   NULL         ]
+[   Cilindrata (cc)     |                 |   TINYINT (5)   |                |   NOTNULL      ]
+[   Potenza (KW)        |                 |   TINYINT (4)   |                |   NOTNULL      ]
+[   Alimentazione       |                 |   VARCHAR(50)   |                |   NOTNULL      ]
+[   Cambio              |                 |   VARCHAR(10)   |                |   NULL         ]
+[   Marce               |                 |   TINYINT (1)   |   DEFAULT(2)   |   NULL         ]
+[   Colore              |                 |   VARCHAR(15)   |                |   NULL         ]
+[   Porte (num)         |                 |   TINYINT (1)   |   DEFAULT(0)   |   NULL         ]
+[   Posti (num)         |                 |   TINYINT (2)   |   DEFAULT(1)   |   NULL         ]
+[   Lunghezza (cm)      |                 |   TINYINT (3)   |   DEFAULT(1)   |   NULL         ]
+[   Larghezza (cm)      |                 |   TINYINT (3)   |   DEFAULT(1)   |   NULL         ]
+[   Altezza   (cm)      |                 |   TINYINT (3)   |   DEFAULT(1)   |   NULL         ]
+[   Serbatoio (lt)      |                 |   TINYINT (3)   |                |   NULL         ]
+[   Optionals           |                 |   TEXT          |                |   NULL         ]
+[   Foto                |                 |   TEXT          |                |   NULL         ]
+[   Note                |                 |   TEXT          |                |   NULL         ]
+[   Prezzo              |                 |   DECIMAL(6,2)  |   DEFAULT(0)   |   NOTNULL      ]
 
 
-Esempio Riga:
+Esempio Riga (solo c/attributi "NOTNULL"):
 
 [ ID  | Marca  | Modello  | Immatricolazione  | Usato  | KM percorsi  |  Targa   | Cilindrata (cc)  | Potenza (KW)  | Alimentazione  | Prezzo ]
-____________________________________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________________________________
 [ 01  | Fiat   | Punto    | 25/10/1997        | 1      | 99000        |  AB012C  | 1242             | 54            | Benzina        | 1000   ]
