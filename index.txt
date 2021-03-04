@@ -7,6 +7,7 @@ tabella   = auto
 [   Marca               |                 |   VARCHAR(50)   |                |   NOTNULL      ]
 [   Modello             |                 |   VARCHAR(50)   |                |   NOTNULL      ]
 [   Immatricolazione    |                 |   DATE          |                |   NOTNULL      ]
+[   Normativa Euro      |                 |   TINYINT (1)   |   DEFAULT(1)   |   NULL         ]
 [   Usato               |                 |   TINYINT (1)   |   DEFAULT(0)   |   NOTNULL      ]
 [   KM percorsi         |                 |   TINYINT (7)   |   DEFAULT(0)   |   NOTNULL      ]
 [   Targa               |                 |   VARCHAR (6)   |   UNIQUE       |   NOTNULL      ]
@@ -26,11 +27,11 @@ tabella   = auto
 [   Optionals           |                 |   TEXT          |                |   NULL         ]
 [   Foto                |                 |   TEXT          |                |   NULL         ]
 [   Note                |                 |   TEXT          |                |   NULL         ]
-[   Prezzo              |                 |   DECIMAL(6,2)  |   DEFAULT(0)   |   NOTNULL      ]
+[   Prezzo (Eur)        |                 |   DECIMAL(6,2)  |   DEFAULT(0)   |   NOTNULL      ]
 
 
 Esempio Riga (solo c/attributi "NOTNULL"):
 
-[ ID  | Marca  | Modello  | Immatricolazione  | Usato  | KM percorsi  |  Targa   | Cilindrata (cc)  | Potenza (KW)  | Alimentazione  | Prezzo ]
+[ ID  | Marca  | Modello  | Immatricolazione  | Usato  | KM percorsi  |  Targa   | Cilindrata (cc)  | Potenza (KW)  | Alimentazione  | Prezzo (Eur) ]
 ______________________________________________________________________________________________________________________________________________
-[ 01  | Fiat   | Punto    | 25/10/1997        | 1      | 99000        |  AB012C  | 1242             | 54            | Benzina        | 1000   ]
+[ 01  | Fiat   | Punto    | 25/10/1997        | 1      | 99000        |  AB012C  | 1242             | 54            | Benzina        | 1000,00      ]
